@@ -15,3 +15,5 @@ print("\n")
 print(true == true) -- true
 print(true ~= true) -- false
 
+print(not (true and false)) -- true
+
