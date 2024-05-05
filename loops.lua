@@ -31,12 +31,3 @@ repeat
 	loop3 = loop3 + 1
 until not (loop3 < 10)
 
-
-
-print("\n")
-
--- for ( variable, limit, increment or (-n) )
-for i=1000, 0, -500 do
-	print(i)
-end
-
