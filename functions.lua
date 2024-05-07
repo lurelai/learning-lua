@@ -31,3 +31,43 @@ end
 tableFun {"20", 12}
 
 
+
+print("\n")
+function multipleReturns()
+	return "20", "30", "50"
+end
+retur1, retur2, retur3 = multipleReturns()
+print(retur1, retur2, retur3)
+
+-- You don't need to put all values in a variable to see the completaly returned
+print(multipleReturns())
+
+
+print("\n")
+-- If you put more then one multiple attribuition with an multipleReturns function, just the first return of the function will be match
+return21, return22, return23 = multipleReturns(), "oka"
+print(return21, return22, return23) -- > 20		oka		nil
+
+
+
+function callBack()
+	return "This is a call back"
+end
+
+-- Is possible to pass callBacks, in that way
+function mina( cB )
+	print(cB())
+end
+
+mina(callBack)
+
+do
+	local localFunction = function ()
+		print "this is a local function"
+	end
+
+	localFunction()
+end
+
+print(localFunction)
+
