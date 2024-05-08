@@ -18,9 +18,11 @@ for i, v in ipairs(func3Table) do print(i, v) end
 print()
 
 
-
-
 -- the pair function send to the first the current length(or the key assoiative) of all element and its values to the second
 -- work with every table type
 for i, v in pairs(func3Table) do print(i, v) end
+
+-- The math table with math methods
+print("The square of 64 is "..math.sqrt(64).." and -"..math.sqrt(64))
+
 
