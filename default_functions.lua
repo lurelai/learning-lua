@@ -22,7 +22,12 @@ print()
 -- work with every table type
 for i, v in pairs(func3Table) do print(i, v) end
 
--- The math table with math methods
+-- The math library
 print("The square of 64 is "..math.sqrt(64).." and -"..math.sqrt(64))
 
+
+-- The io library
+typeSomething=io.read()
+
+print("You typed: "..typeSomething)
 
